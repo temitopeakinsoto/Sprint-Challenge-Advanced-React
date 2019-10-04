@@ -22,7 +22,7 @@ export default class PlayersList extends Component {
         return(
             <div>
                 <h3>This is the player list component</h3>
-                <PlayerDetails />               
+                {this.state.playerList.map(eachPlayer => <PlayerDetails playerData={eachPlayer}/>)}
                 
             </div>
         )

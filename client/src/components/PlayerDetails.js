@@ -2,10 +2,13 @@ import React, {Component} from "react";
 
 export default class PlayerDetails extends Component {
 
-    render(){      
+    render(){  
+        const {name, country, searches} = this.props.playerData;      
         return(
             <div>
-                <h5>This is the player details component</h5>
+                <p>{name}</p>
+                <p>{country}</p>
+                <p>{searches}</p>
             </div>
         )
     }
