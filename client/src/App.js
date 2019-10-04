@@ -11,11 +11,11 @@ function App() {
   }
   return (
     <div className="App">
-      <div>
-        <button onClick={toggleMode}>Dark</button>
+      <div> 
+        <button onClick={toggleMode}>Change Background</button>
         <h1>Women's World Cup Players' Data</h1> 
         <PlayersList />
-      </div>
+      </div> 
           
     </div>
   );

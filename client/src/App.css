@@ -31,6 +31,18 @@
     transform: rotate(360deg);
   }
 }
+
+.playerDetails{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #61dafb;
+  justify-content: center;
+  margin: 10px auto;
+  width: 30%;
+  
+
+}
 .dark-mode {
   color: #fff;
   background-color: #313843;  

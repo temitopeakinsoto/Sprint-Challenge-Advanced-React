@@ -7,11 +7,26 @@ let tools;
 
 beforeEach(() => {
   rtl.cleanup();
-  tools = rtl.render(<App />);
+  tools = rtl.render(<App />); 
 });
 
-it("shows the word player", () => {
-  const elementWithPlayer = tools.queryByText(/player/i);
-  expect(elementWithPlayer).toBeInTheDocument();
-});
+describe('app top-level component', () => {
+
+  it('can debug the output', () => {
+    tools.debug();
+  });
+
+  it("shows the word world cup", () => {
+    const elementWithPlayer = tools.queryByText(/world cup/i);
+    expect(elementWithPlayer).toBeInTheDocument();
+  });
+
+  it("shows the word change Background", () => {
+    const elementWithPlayer = tools.queryByText(/Change Background/i);
+    expect(elementWithPlayer).toBeInTheDocument();
+  });
+
+})
+
+
 
