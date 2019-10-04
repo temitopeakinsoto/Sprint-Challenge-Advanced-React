@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PlayerDetails from './PlayerDetails';
 
 export default class PlayersList extends Component {
     constructor(){
@@ -9,6 +10,7 @@ export default class PlayersList extends Component {
         return(
             <div>
                 <h3>This is the player list component</h3>
+                <PlayerDetails />
             </div>
         )
     }
