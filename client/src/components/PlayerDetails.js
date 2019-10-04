@@ -6,9 +6,9 @@ export default class PlayerDetails extends Component {
         const {name, country, searches} = this.props.playerData;      
         return(
             <div>
-                <p>{name}</p>
-                <p>{country}</p>
-                <p>{searches}</p>
+                <h1>{name}</h1>
+                <p>Country: {country}</p>
+                <p>Searches: {searches}</p>
             </div>
         )
     }
