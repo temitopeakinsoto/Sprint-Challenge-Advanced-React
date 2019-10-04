@@ -3,8 +3,8 @@ import PlayerDetails from './PlayerDetails';
 import axios from  "axios";
 
 export default class PlayersList extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
 
         this.state= {
             playerList: []
@@ -21,9 +21,7 @@ export default class PlayersList extends Component {
     render(){
         return(
             <div>
-                <h3>This is the player list component</h3>
-                {this.state.playerList.map(eachPlayer => <PlayerDetails playerData={eachPlayer}/>)}
-                
+                {this.state.playerList.map(eachPlayer => <PlayerDetails playerData={eachPlayer}/>)}                
             </div>
         )
     }

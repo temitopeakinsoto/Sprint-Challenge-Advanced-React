@@ -1,11 +1,22 @@
 import React from 'react';
 import PlayersList from './components/PlayersList';  
+import useDarkMode from './hooks/useDarkMode';
+import './App.css';
 
 function App() {
+  const [darkMode, setDarkMode] = useDarkMode(false);
+  const toggleMode = e => {
+    e.preventDefault();
+    setDarkMode(!darkMode);
+  }
   return (
     <div className="App">
-      <h1>Women's World Cup Players' Data</h1> 
-      <PlayersList />    
+      <div>
+        <button onClick={toggleMode}>Dark</button>
+        <h1>Women's World Cup Players' Data</h1> 
+        <PlayersList />
+      </div>
+          
     </div>
   );
 }
